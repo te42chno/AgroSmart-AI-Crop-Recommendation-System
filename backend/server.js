@@ -31,13 +31,17 @@ app.use('/api/admin', adminRoutes);
 // ── Error Handler ─────────────────────────────────────
 app.use(errorHandler);
 
-// ── Start ─────────────────────────────────────────────
-const start = async () => {
-  await connectDB();
-  app.listen(PORT, '0.0.0.0', () => {
-    console.log(`\n  AgroSmart Backend running on http://localhost:${PORT}`);
-    console.log(`  ML Service expected at ${process.env.ML_SERVICE_URL || 'http://127.0.0.1:5000'}\n`);
-  });
-};
+// ── Export ─────────────────────────────────────────────
+module.exports = app;
 
-start();
+// ── Start (Local only) ────────────────────────────────
+if (require.main === module) {
+  const start = async () => {
+    await connectDB();
+    app.listen(PORT, '0.0.0.0', () => {
+      console.log(`\n  AgroSmart Backend running on http://localhost:${PORT}`);
+      console.log(`  ML Service expected at ${process.env.ML_SERVICE_URL || 'http://127.0.0.1:5000'}\n`);
+    });
+  };
+  start();
+}
