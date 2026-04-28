@@ -11,10 +11,5 @@
       "source": "/ml-api/(.*)",
       "destination": "/api/ml.py"
     }
-  ],
-  "functions": {
-    "api/ml.py": {
-      "runtime": "vercel-python@0.1.0"
-    }
-  }
+  ]
 }
