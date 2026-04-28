@@ -15,9 +15,16 @@ from pydantic import BaseModel, Field
 
 # ── Setup ──────────────────────────────────────────────
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# Look for model in current dir or parent (depending on where it's called from)
 MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
+if not os.path.exists(MODEL_PATH):
+    MODEL_PATH = os.path.join(BASE_DIR, "..", "ml-service", "model.pkl")
 
-app = FastAPI(title="AgroSmart ML Service", version="1.0.0")
+app = FastAPI(
+    title="AgroSmart ML Service", 
+    version="1.0.0",
+    root_path="/ml-api"
+)
 
 # CORS — allow all origins in development
 app.add_middleware(

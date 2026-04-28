@@ -11,5 +11,11 @@
       "source": "/ml-api/(.*)",
       "destination": "/api/ml.py"
     }
-  ]
+  ],
+  "functions": {
+    "api/ml.py": {
+      "runtime": "@vercel/python",
+      "includeFiles": "ml-service/model.pkl"
+    }
+  }
 }
