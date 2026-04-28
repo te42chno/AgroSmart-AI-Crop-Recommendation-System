@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+**/node_modules/
+package-lock.json
+**/package-lock.json
+
+# Build outputs
+build/
+dist/
+**/dist/
+
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+
+# Large Files
+ml-service/model.pkl
+
+# Misc
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+.vscode/
+.idea/

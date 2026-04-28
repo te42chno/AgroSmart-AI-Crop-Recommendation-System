@@ -1,0 +1,461 @@
+{
+  "users": [
+    {
+      "_id": "27cc7ca9f84aefdde134a109",
+      "name": "Admin",
+      "email": "admin@agrosmart.ai",
+      "password": "$2a$10$mE9RY.u0.57Q/hgBKImeqOVgtJtY./p8wL9fwI4R57hak6KFYsTom",
+      "role": "admin",
+      "createdAt": "2026-04-26T21:00:50.282Z"
+    },
+    {
+      "_id": "4ab4d113d7a3e014fdee0cc5",
+      "name": "Ravi Kumar",
+      "email": "farmer@agrosmart.ai",
+      "password": "$2a$10$JoXoEY819UyCDRWGdhPtauKKSjGoxBbx6.bnjg.UcjMDtLKC7dKxi",
+      "role": "farmer",
+      "createdAt": "2026-04-26T21:00:50.345Z"
+    }
+  ],
+  "predictions": [
+    {
+      "userId": "4ab4d113d7a3e014fdee0cc5",
+      "inputs": {
+        "N": 90,
+        "P": 42,
+        "K": 43,
+        "temperature": 20.8,
+        "humidity": 82,
+        "ph": 6.5,
+        "rainfall": 202
+      },
+      "result": {
+        "crop": "rice",
+        "confidence": 0.95,
+        "allPredictions": [
+          {
+            "crop": "rice",
+            "confidence": 0.95
+          },
+          {
+            "crop": "jute",
+            "confidence": 0.03
+          }
+        ]
+      },
+      "_id": "97c4c42626f872af3d8e4ade",
+      "createdAt": "2026-04-26T21:00:50.347Z"
+    },
+    {
+      "userId": "4ab4d113d7a3e014fdee0cc5",
+      "inputs": {
+        "N": 85,
+        "P": 58,
+        "K": 41,
+        "temperature": 24.5,
+        "humidity": 65,
+        "ph": 7,
+        "rainfall": 70
+      },
+      "result": {
+        "crop": "wheat",
+        "confidence": 0.88,
+        "allPredictions": [
+          {
+            "crop": "wheat",
+            "confidence": 0.88
+          },
+          {
+            "crop": "maize",
+            "confidence": 0.06
+          }
+        ]
+      },
+      "_id": "530d760e614a8aabbcf930c3",
+      "createdAt": "2026-04-26T21:00:50.347Z"
+    },
+    {
+      "userId": "4ab4d113d7a3e014fdee0cc5",
+      "inputs": {
+        "N": 70,
+        "P": 40,
+        "K": 35,
+        "temperature": 28,
+        "humidity": 75,
+        "ph": 6.2,
+        "rainfall": 180
+      },
+      "result": {
+        "crop": "sugarcane",
+        "confidence": 0.82,
+        "allPredictions": [
+          {
+            "crop": "sugarcane",
+            "confidence": 0.82
+          }
+        ]
+      },
+      "_id": "928da342bbf5932ecc6702c1",
+      "createdAt": "2026-04-26T21:00:50.347Z"
+    },
+    {
+      "_id": "d2cf17ee24313d6e740a92a6",
+      "userId": "4ab4d113d7a3e014fdee0cc5",
+      "inputs": {
+        "N": 90,
+        "P": 42,
+        "K": 43,
+        "temperature": 26,
+        "humidity": 80,
+        "ph": 6.5,
+        "rainfall": 120
+      },
+      "result": {
+        "crop": "maize",
+        "confidence": 0.34,
+        "allPredictions": [
+          {
+            "crop": "maize",
+            "confidence": 0.34
+          },
+          {
+            "crop": "sugarcane",
+            "confidence": 0.29
+          },
+          {
+            "crop": "jute",
+            "confidence": 0.23
+          },
+          {
+            "crop": "rice",
+            "confidence": 0.08
+          },
+          {
+            "crop": "papaya",
+            "confidence": 0.03
+          }
+        ]
+      },
+      "createdAt": "2026-04-27T18:33:45.529Z"
+    },
+    {
+      "_id": "12cfa870289664d5567aa2cf",
+      "userId": "4ab4d113d7a3e014fdee0cc5",
+      "inputs": {
+        "N": 90,
+        "P": 42,
+        "K": 43,
+        "temperature": 26,
+        "humidity": 80,
+        "ph": 6.5,
+        "rainfall": 120
+      },
+      "result": {
+        "crop": "maize",
+        "confidence": 0.34,
+        "allPredictions": [
+          {
+            "crop": "maize",
+            "confidence": 0.34
+          },
+          {
+            "crop": "sugarcane",
+            "confidence": 0.29
+          },
+          {
+            "crop": "jute",
+            "confidence": 0.23
+          },
+          {
+            "crop": "rice",
+            "confidence": 0.08
+          },
+          {
+            "crop": "papaya",
+            "confidence": 0.03
+          }
+        ]
+      },
+      "createdAt": "2026-04-27T18:34:46.467Z"
+    },
+    {
+      "_id": "8ddf6f2c30dfbf20f5201c39",
+      "userId": "4ab4d113d7a3e014fdee0cc5",
+      "inputs": {
+        "N": 90,
+        "P": 42,
+        "K": 43,
+        "temperature": 26,
+        "humidity": 80,
+        "ph": 6.5,
+        "rainfall": 120
+      },
+      "result": {
+        "confidence": 0.34,
+        "allPredictions": [
+          {
+            "crop": "maize",
+            "confidence": 0.34
+          },
+          {
+            "crop": "sugarcane",
+            "confidence": 0.29
+          },
+          {
+            "crop": "jute",
+            "confidence": 0.23
+          },
+          {
+            "crop": "rice",
+            "confidence": 0.08
+          },
+          {
+            "crop": "papaya",
+            "confidence": 0.03
+          }
+        ]
+      },
+      "createdAt": "2026-04-27T18:39:32.856Z"
+    },
+    {
+      "_id": "dea0a7e12e523f400416496a",
+      "userId": "4ab4d113d7a3e014fdee0cc5",
+      "inputs": {
+        "N": 120,
+        "P": 42,
+        "K": 43,
+        "temperature": 34,
+        "humidity": 80,
+        "ph": 6.5,
+        "rainfall": 120
+      },
+      "result": {
+        "crop": "sugarcane",
+        "confidence": 0.49,
+        "allPredictions": [
+          {
+            "crop": "sugarcane",
+            "confidence": 0.49
+          },
+          {
+            "crop": "maize",
+            "confidence": 0.2
+          },
+          {
+            "crop": "jute",
+            "confidence": 0.14
+          },
+          {
+            "crop": "coffee",
+            "confidence": 0.04
+          },
+          {
+            "crop": "banana",
+            "confidence": 0.04
+          }
+        ]
+      },
+      "createdAt": "2026-04-27T18:42:15.202Z"
+    },
+    {
+      "_id": "426c9877b3a674e80a5ecdd0",
+      "userId": "4ab4d113d7a3e014fdee0cc5",
+      "inputs": {
+        "N": 120,
+        "P": 55,
+        "K": 46,
+        "temperature": 30,
+        "humidity": 60,
+        "ph": 7,
+        "rainfall": 120
+      },
+      "result": {
+        "crop": "maize",
+        "confidence": 0.39,
+        "allPredictions": [
+          {
+            "crop": "maize",
+            "confidence": 0.39
+          },
+          {
+            "crop": "sugarcane",
+            "confidence": 0.19
+          },
+          {
+            "crop": "coffee",
+            "confidence": 0.16
+          },
+          {
+            "crop": "cotton",
+            "confidence": 0.1
+          },
+          {
+            "crop": "millet",
+            "confidence": 0.05
+          }
+        ]
+      },
+      "createdAt": "2026-04-27T18:45:33.133Z"
+    },
+    {
+      "_id": "e865a2a624d1d0a03ff36044",
+      "userId": "4ab4d113d7a3e014fdee0cc5",
+      "inputs": {
+        "N": 42,
+        "P": 42,
+        "K": 41,
+        "temperature": 27,
+        "humidity": 59,
+        "ph": 6.5,
+        "rainfall": 0
+      },
+      "result": {
+        "crop": "millet",
+        "confidence": 0.75,
+        "allPredictions": [
+          {
+            "crop": "millet",
+            "confidence": 0.75
+          },
+          {
+            "crop": "mango",
+            "confidence": 0.18
+          },
+          {
+            "crop": "chickpea",
+            "confidence": 0.02
+          },
+          {
+            "crop": "lentil",
+            "confidence": 0.02
+          },
+          {
+            "crop": "papaya",
+            "confidence": 0.01
+          }
+        ]
+      },
+      "createdAt": "2026-04-27T19:08:02.697Z"
+    },
+    {
+      "_id": "e3ded15455c363c9c592c6ec",
+      "userId": "4ab4d113d7a3e014fdee0cc5",
+      "inputs": {
+        "N": 42,
+        "P": 45,
+        "K": 10,
+        "temperature": 27,
+        "humidity": 59,
+        "ph": 4.5,
+        "rainfall": 0
+      },
+      "result": {
+        "crop": "millet",
+        "confidence": 0.42,
+        "allPredictions": [
+          {
+            "crop": "millet",
+            "confidence": 0.42
+          },
+          {
+            "crop": "mothbeans",
+            "confidence": 0.23
+          },
+          {
+            "crop": "orange",
+            "confidence": 0.21
+          },
+          {
+            "crop": "maize",
+            "confidence": 0.04
+          },
+          {
+            "crop": "cotton",
+            "confidence": 0.04
+          }
+        ]
+      },
+      "createdAt": "2026-04-27T19:08:31.662Z"
+    },
+    {
+      "_id": "463561ae61f3335c5281f7f6",
+      "userId": "4ab4d113d7a3e014fdee0cc5",
+      "inputs": {
+        "N": 45,
+        "P": 42,
+        "K": 43,
+        "temperature": 27,
+        "humidity": 59,
+        "ph": 7,
+        "rainfall": 0
+      },
+      "result": {
+        "crop": "millet",
+        "confidence": 0.83,
+        "allPredictions": [
+          {
+            "crop": "millet",
+            "confidence": 0.83
+          },
+          {
+            "crop": "mango",
+            "confidence": 0.12
+          },
+          {
+            "crop": "chickpea",
+            "confidence": 0.02
+          },
+          {
+            "crop": "lentil",
+            "confidence": 0.01
+          },
+          {
+            "crop": "papaya",
+            "confidence": 0.01
+          }
+        ]
+      },
+      "createdAt": "2026-04-27T19:17:23.309Z"
+    },
+    {
+      "_id": "3182df9e3af38886e59d8d1e",
+      "userId": "4ab4d113d7a3e014fdee0cc5",
+      "inputs": {
+        "N": 42,
+        "P": 42,
+        "K": 41,
+        "temperature": 39,
+        "humidity": 16,
+        "ph": 10,
+        "rainfall": 0
+      },
+      "result": {
+        "crop": "millet",
+        "confidence": 0.35,
+        "allPredictions": [
+          {
+            "crop": "millet",
+            "confidence": 0.35
+          },
+          {
+            "crop": "chickpea",
+            "confidence": 0.31
+          },
+          {
+            "crop": "lentil",
+            "confidence": 0.15
+          },
+          {
+            "crop": "kidneybeans",
+            "confidence": 0.07
+          },
+          {
+            "crop": "cotton",
+            "confidence": 0.05
+          }
+        ]
+      },
+      "createdAt": "2026-04-28T09:55:14.966Z"
+    }
+  ]
+}
